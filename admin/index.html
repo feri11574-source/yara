@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مدیریت یارا</title><link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header><a href="../index.html">← بازگشت به فروشگاه</a><h1>پنل مدیریت یارا</h1><button id="logout" hidden>خروج</button></header>
+<main>
+<section id="login" class="box"><h2>ورود مدیر</h2><p>ایمیل و رمز عبور حساب مدیر را وارد کنید.</p>
+<input id="email" type="email" placeholder="ایمیل" autocomplete="username">
+<input id="password" type="password" placeholder="رمز عبور" autocomplete="current-password">
+<button id="signin" type="button">ورود</button><div id="message"></div></section>
+<section id="panel" class="box" hidden>
+<div class="ok" id="welcome"></div>
+<div class="cards"><div><b id="productCount">۰</b><span>محصول فعال</span></div><div><b id="orderCount">۰</b><span>سفارش من</span></div></div>
+<h2>محصولات</h2><div id="products"><p>در حال دریافت...</p></div>
+</section>
+</main>
+<script src="../config.js"></script><script src="admin.js"></script>
+</body></html>
